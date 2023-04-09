@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { AiOutlineClose, AiOutlineDelete } from "react-icons/ai";
 
 import "./index.css";
-import { ShopContext } from "../../App";
 import { useCartContext } from "../../contexts/CartContext";
 
 const Cart = () => {
@@ -54,7 +53,7 @@ const Cart = () => {
           ) : (
             <div className="space-between">
               <div className="cartMain">
-                <img src="images/image-suit1.jpg" />
+                <img src="images/image-suit1.jpg" alt="chosen-item" />
                 <div>
                   <p>{prodName}</p>
                   <p>
@@ -78,10 +77,5 @@ const Cart = () => {
     </div>
   );
 };
-{
-  /* <div className="cardContent">
-            <p>Your cart is empty</p>
-          </div> */
-}
 
 export default Cart;
