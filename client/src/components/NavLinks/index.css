@@ -35,7 +35,7 @@
 .links p:hover {
   color: black;
 
-  border-bottom: 2px solid darkorange;
+  border-bottom: 2px solid darkgray;
 }
 
 .checkout {

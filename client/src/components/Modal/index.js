@@ -4,10 +4,10 @@ import "./index.css";
 import { ShopContext } from "../../App";
 
 const imgs = [
-  { id: 0, url: "/images/image-product-1.jpeg" },
-  { id: 1, url: "/images/image-product-2.jpeg" },
-  { id: 2, url: "/images/image-product-3.jpeg" },
-  { id: 3, url: "/images/image-product-4.jpeg" },
+  { id: 0, url: "/images/image-suit1.jpg" },
+  { id: 1, url: "/images/image-suit2.jpg" },
+  { id: 2, url: "/images/image-suit3.jpg" },
+  { id: 3, url: "/images/image-suit4.jpg" },
 ];
 
 const Modal = () => {

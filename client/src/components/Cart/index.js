@@ -54,7 +54,7 @@ const Cart = () => {
           ) : (
             <div className="space-between">
               <div className="cartMain">
-                <img src="images/image-product-1.jpeg" />
+                <img src="images/image-suit1.jpg" />
                 <div>
                   <p>{prodName}</p>
                   <p>

@@ -24,6 +24,16 @@
   padding: 0px;
 }
 
+p {
+  cursor: pointer;
+}
+
+p:hover {
+  color: black;
+
+  border-bottom: 2px solid darkgray;
+}
+
 @keyframes hamburger {
   100% {
     transform: translateX(0%);

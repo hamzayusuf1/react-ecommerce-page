@@ -33,7 +33,7 @@
 }
 
 .xBtn {
-  color: rgb(240, 175, 54);
+  color: rgb(0, 0, 0);
   transition: all 0.1s ease-in-out;
   font-size: larger;
   text-align: end;
@@ -41,7 +41,7 @@
 }
 
 .xBtn:hover {
-  color: peru;
+  color: lightgrey;
   cursor: pointer;
 }
 

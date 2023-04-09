@@ -14,7 +14,7 @@ const Gallery = () => {
   // /images/image-product-1.jpeg
 
   const imgs = [
-    { id: 0, url: "/images/image-suit11.jpg" },
+    { id: 0, url: "/images/image-suit1.jpg" },
     { id: 1, url: "/images/image-suit2.jpg" },
     { id: 2, url: "/images/image-suit3.jpg" },
     { id: 3, url: "/images/image-suit4.jpg" },
@@ -46,7 +46,7 @@ const Gallery = () => {
 
   return (
     <>
-      <div className="gallery">
+      <div className={openModal ? "dark-image" : "gallery"}>
         <div className="mainImage">
           {isMobile && (
             <button onClick={goToPrev} className="leftArrow">
@@ -56,7 +56,7 @@ const Gallery = () => {
 
           <div className="imgParent">
             <img
-              className={openModal ? "dark-image" : "center-image"}
+              className={"center-image"}
               src={imgs[currentIndex].url}
               onClick={() => {
                 if (!isMobile) {
