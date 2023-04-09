@@ -1,0 +1,94 @@
+.navContainer {
+  height: 50px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px lightgray solid;
+  margin-bottom: 10px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  margin-right: 1.5rem;
+  margin-left: -3rem;
+}
+
+.links h1 {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.links p {
+  display: flex;
+  margin-right: 1rem;
+  color: gray;
+  cursor: pointer;
+  display: none;
+}
+
+.links p:hover {
+  color: black;
+
+  border-bottom: 2px solid darkorange;
+}
+
+.checkout {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout span {
+  background-color: black;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -3px;
+  margin-bottom: 10px;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  border-radius: 10px;
+}
+
+.logo {
+  color: black;
+  font-size: x-large;
+}
+
+.profilePic {
+  height: 2rem;
+}
+
+.profilePic:hover {
+  border: solid 2px black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profileCart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .icon-and-cart {
+    position: relative;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .links p {
+    display: flex;
+  }
+}
