@@ -1,9 +1,8 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 
 import "./index.css";
 import { ShopContext } from "../../App";
-import Modal from "../Modal";
 
 const Gallery = () => {
   const { currentIndex, setCurrentIndex, width, openModal, setOpenModal } =
@@ -14,13 +13,12 @@ const Gallery = () => {
   // /images/image-product-1.jpeg
 
   const imgs = [
-    { id: 0, url: "/images/image-suit1.jpg" },
-    { id: 1, url: "/images/image-suit2.jpg" },
-    { id: 2, url: "/images/image-suit3.jpg" },
-    { id: 3, url: "/images/image-suit4.jpg" },
+    { id: 0, url: "/images/image-suit1-nobg.png" },
+    { id: 1, url: "/images/image-suit2-nobg.png" },
+    { id: 2, url: "/images/image-suit3-nobg.png" },
+    { id: 3, url: "/images/image-suit4-nobg.png" },
   ];
 
-  const [sliderData, setSliderData] = useState(imgs[0]);
   // const [currentIndex, setCurrentIndex] = useState(0);
 
   // const handleClick = (e) => {
@@ -54,10 +52,11 @@ const Gallery = () => {
             </button>
           )}
 
-          <div className="imgParent">
+          <div className="imgParent" alt="main-image">
             <img
               className={"center-image"}
               src={imgs[currentIndex].url}
+              alt="main-image"
               onClick={() => {
                 if (!isMobile) {
                   setOpenModal(!openModal);
@@ -75,7 +74,8 @@ const Gallery = () => {
         <div className="images">
           {imgs.map((info, idx) => (
             <img
-              className={imgs[currentIndex].id == idx ? "clicked" : ""}
+              alt="smaller-images"
+              className={imgs[currentIndex].id === idx ? "clicked" : ""}
               key={info.id}
               src={info.url}
               onClick={() => {
@@ -88,12 +88,5 @@ const Gallery = () => {
     </>
   );
 };
-
-{
-  /* <img src={`/images/image-product-1.jpeg`} onClick={handleClick} />
-        <img src={`/images/image-product-2.jpeg`} onClick={handleClick} />
-        <img src={`/images/image-product-3.jpeg`} onClick={handleClick} />
-        <img src={`/images/image-product-4.jpeg`} onClick={handleClick} /> */
-}
 
 export default Gallery;

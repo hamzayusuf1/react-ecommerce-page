@@ -6,7 +6,7 @@
 .mainDiv {
   display: flex;
   flex-direction: row;
-  height: 40rem;
+  height: 100vh;
   width: 100%;
   margin: auto;
   z-index: -1;

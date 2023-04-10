@@ -1,18 +1,13 @@
-import React, { useState, useContext } from "react";
-import {
-  AiOutlineMinus,
-  AiOutlinePlus,
-  AiOutlineShoppingCart,
-} from "react-icons/ai";
+import React from "react";
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
-import { ShopContext } from "../../App";
 import { useCartContext } from "../../contexts/CartContext";
 
 import "./index.css";
 
 const Description = () => {
   // const { count, setCount } = useContext(ShopContext);
-  const { orderNum, setOrderNum, prodName, setShowCart, count, setCount } =
+  const { setOrderNum, prodName, setShowCart, count, setCount } =
     useCartContext();
 
   const handleDecrement = () => {
@@ -37,7 +32,7 @@ const Description = () => {
       <p>Stylish design my H.tailors</p>
       <h3>$125.00</h3>
       <p>
-        These high quality, affordable suits can in various colours to satisfy
+        These high quality, affordable suits come in various colours to satisfy
         the tastes of many.
       </p>
       <div className="prices">
